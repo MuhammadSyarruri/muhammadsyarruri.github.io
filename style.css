@@ -74,6 +74,14 @@ nav,
     border: var(--third) solid 4px;
 }
 
+.aboutme {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 8em auto -1em;
+}
+
 .wave {
     position: relative;
     top: 1px;
@@ -111,6 +119,14 @@ nav,
 
 .js-tag {
     background-color: yellow;
+    color: black;
+    padding: 0px 3px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.json-tag {
+    background-color: white;
     color: black;
     padding: 0px 3px;
     border-radius: 4px;
