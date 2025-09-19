@@ -1,0 +1,36 @@
+.alert-box {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 18rem;
+  background-color: #f1f1f1;
+  border: #000 solid 4px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.alert-box p {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #212121;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.alert-box button {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .alert-box {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}

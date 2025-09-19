@@ -1,0 +1,86 @@
+.sky-container {
+  position: absolute;
+  z-index: 0;
+}
+
+canvas {
+  position: "absolute";
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  box-shadow: white 0 0 25px 2px;
+}
+
+.planet {
+  cursor: pointer;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+.planet-1 {
+  top: 33rem;
+  left: 3rem;
+}
+.planet-2 {
+  top: 5rem;
+  right: 5rem;
+}
+.planet-3 {
+  top: 58rem;
+  right: 6rem;
+}
+.planet-4 {
+  top: 68rem;
+  left: 6rem;
+}
+.planet-5 {
+  bottom: 20rem;
+  left: 10rem;
+}
+.planet-6 {
+  bottom: 20rem;
+  right: 6rem;
+}
+
+@media (max-width: 1200px) {
+  .planet {
+    width: 150px;
+  }
+  .planet-3 {
+    top: 45rem;
+    right: 4cap;
+  }
+  .planet-4 {
+    top: 80rem;
+    left: 2rem;
+  }
+  .planet-5 {
+    bottom: 4rem;
+    left: 4rem;
+  }
+  .planet-6 {
+    bottom: 35rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .planet {
+    width: 90px;
+  }
+  .planet-1 {
+    top: 40rem;
+    left: 3rem;
+  }
+  .planet-2 {
+    top: 4rem;
+    right: 2rem;
+  }
+}

@@ -1,0 +1,133 @@
+.contact-section {
+  background-image: url(/img/wood-background.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: start;
+  position: relative;
+  perspective: 800px;
+}
+
+.envelope {
+  position: relative;
+  width: 650px;
+  height: 90vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.envelope img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+.envelope-top {
+  top: 10px;
+  z-index: 2;
+}
+
+.envelope-back {
+  bottom: 0;
+}
+
+.envelope-front {
+  bottom: 0;
+  z-index: 3;
+}
+
+.envelope-success {
+  z-index: 2;
+  bottom: -150px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background: repeating-linear-gradient(#fff, #fff 28px, #b2b5bb 29px);
+  color: #242424;
+  width: 34rem;
+  height: 38rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: #000 solid 1px;
+}
+
+.letter-top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  margin-bottom: 22px;
+}
+
+.form-div {
+  display: flex;
+  text-wrap: nowrap;
+  margin: 4px 0;
+  gap: 5px;
+}
+
+.letter input,
+.letter textarea {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 4px 0;
+}
+
+.letter textarea {
+  margin-top: 1.4rem;
+  height: 20rem;
+  line-height: 1.8;
+  scrollbar-width: none;
+}
+
+.submit-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: -0.4rem 0;
+  gap: 5px;
+}
+
+.submit-letter p {
+  margin: 0;
+}
+
+.submit-letter button {
+  padding: 5px;
+  background-color: #242424;
+  color: #b2b5bb;
+}
+
+@media (max-width: 768px) {
+  .envelope {
+    transform: scale(0.8);
+  }
+
+  .letter {
+    width: 100%;
+    padding: 0;
+    background: repeating-linear-gradient(#fff, #fff 28px, #b2b5bb 30px);
+  }
+  .letter-top {
+    margin-top: 20px;
+  }
+  .letter div {
+    padding: 0 0.8rem;
+  }
+  .letter textarea {
+    height: 18rem;
+    padding: 4px 0.8rem;
+  }
+
+  .submit-letter {
+    margin: 0.5rem 0;
+  }
+}

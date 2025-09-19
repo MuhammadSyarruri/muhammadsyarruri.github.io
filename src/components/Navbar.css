@@ -1,0 +1,50 @@
+header {
+  background-color: #f1f1f1;
+  border: #4b4b4b 4px solid;
+  color: #212121;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 1rem;
+  left: 10px;
+  z-index: 999;
+  border-radius: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  left: -5px;
+  font-size: 1.5rem;
+  background-color: #f1f1f1;
+  border: #4b4b4b 4px solid;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  header h1 {
+    display: none;
+  }
+}
