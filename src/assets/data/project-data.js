@@ -1,7 +1,7 @@
 export const projectData = [
   {
     title: "salted egg e-commerce (old)",
-    url: "https://muhammadsyarruri.github.io/",
+    url: "https://muhammadsyarruri.github.io/oldtelurasinhabibah",
     img: "/img/project/old-telurasinhabibah.png",
     description: "old design of salted egg e-commerce. (my very first project)",
     features: [
@@ -12,7 +12,7 @@ export const projectData = [
   },
   {
     title: "2024 Homepage",
-    url: "https://muhammadsyarruri.github.io/",
+    url: "https://muhammadsyarruri.github.io/oldhomepage/",
     img: "/img/project/2024-homepage.png",
     description: "old design of my personal portfolio website.",
     features: ["Contact form using web3forms"],
