@@ -164,12 +164,10 @@ function ProjectDetails({ project, closeDetails }) {
       <div className="overlay" onClick={() => closeDetails()}></div>
       <div className="project-details">
         <img src={project.img} alt={project.title} />
-        <div className="detail-title">
-          <h3>{project.title}</h3>
-          <a href={project.url} target="_blank">
-            Click to go to project
-          </a>
-        </div>
+        <h3>{project.title}</h3>
+        <a href={project.url} target="_blank">
+          Click to go to project
+        </a>
         <p>{project.description}</p>
         <ul>
           {project.features.map((feature, i) => {
